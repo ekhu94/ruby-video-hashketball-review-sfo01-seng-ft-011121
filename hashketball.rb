@@ -127,9 +127,13 @@ def game_hash
   }
 end
 
-def get_players(team)
+def get_players(team_name)
   hash = game_hash
-  
+  hash.each do |region, team|
+    if team[:team_name] == team_name
+      team[:players]
+    end
+  end
 end
 
 def get_all_players
