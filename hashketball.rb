@@ -189,8 +189,8 @@ def big_shoe_rebounds
   max_idx = 0
   
   players.each_with_index do |player, i|
-    if player[i][:shoe] > max_size
-      max_size = player[i][:shoe]
+    if player[:shoe] > max_size
+      max_size = player[:shoe]
       max_idx = i
     end
   end
