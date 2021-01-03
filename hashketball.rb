@@ -183,4 +183,4 @@ def player_stats(name)
   end
 end
 
-print get_all_players
+print player_stats("Alan Anderson")
