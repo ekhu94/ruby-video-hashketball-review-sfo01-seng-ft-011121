@@ -139,3 +139,7 @@ def num_points_scored(name)
   end
 end
 
+def shoe_size(name)
+  players = get_players
+  players.each { |player| return player[:shoe] if player[:player_name] == name }
+end
