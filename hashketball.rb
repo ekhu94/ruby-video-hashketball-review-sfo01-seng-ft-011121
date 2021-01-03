@@ -220,4 +220,4 @@ def winning_team
   total_points_scored("Brooklyn Nets") > total_points_scored("Charlotte Hornets") ? "Brooklyn Nets" : "Charlotte Hornets"
 end
 
-print winning_team
+print most_points_scored("Brooklyn Nets")
