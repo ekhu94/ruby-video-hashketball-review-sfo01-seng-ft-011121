@@ -146,8 +146,8 @@ end
 
 def team_colors(name)
   hash = game_hash
-  hash.each do |k, v|
-    
+  hash.each do |region|
+    region.each { |team| team[:team_colors] if tean[:team_name] == name }
   end
 end
 
