@@ -127,9 +127,12 @@ def game_hash
   }
 end
 
-def get_players
+def get_players(team)
   hash = game_hash
-  hash[:home][:players].concat(hash[:away][:players])
+  if team == nil 
+    hash[:home][:players].concat(hash[:away][:players])
+  end
+  hash[team][:players]
 end
 
 def num_points_scored(name)
@@ -158,4 +161,6 @@ def team_names
   arr
 end
 
-print team_names
+def player_numbers(team_name)
+  
+end
