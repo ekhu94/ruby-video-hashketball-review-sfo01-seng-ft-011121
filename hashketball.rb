@@ -173,3 +173,8 @@ def player_numbers(team_name)
   players.each { |player| numbers << player[:number] }
   numbers
 end
+
+def player_stats(name)
+  players = get_all_players
+  players.each { |player| player if player[:player_name] == name }
+end
