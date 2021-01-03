@@ -167,6 +167,4 @@ def team_names
   arr
 end
 
-def player_numbers(team_name)
-  
-end
+print get_players("Brooklyn Nets")
