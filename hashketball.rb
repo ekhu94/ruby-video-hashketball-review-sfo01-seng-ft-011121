@@ -127,4 +127,11 @@ def game_hash
   }
 end
 
-# Write code here
+def get_players
+  hash = game_hash
+  
+end
+
+def num_points_scored(name)
+  
+end
