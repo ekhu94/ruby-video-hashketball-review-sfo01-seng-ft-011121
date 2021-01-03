@@ -176,5 +176,9 @@ end
 
 def player_stats(name)
   players = get_all_players
-  players.each { |player| player if player[:player_name] == name }
+  players.each do |player|
+    if player[:player_name] == name
+      player
+    end
+  end
 end
