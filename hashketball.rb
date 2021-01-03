@@ -168,5 +168,5 @@ def team_names
 end
 
 def player_numbers(team_name)
-  team = get_players(team_name)
+  players = get_players(team_name)
 end
