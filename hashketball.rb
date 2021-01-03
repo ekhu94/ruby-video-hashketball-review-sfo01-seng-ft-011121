@@ -209,4 +209,13 @@ def most_points_scored
   return players[max_idx][:player_name]
 end
 
-print most_points_scored
+def total_points_scored(team)
+  players = get_players(team)
+  total = 0
+  players.each { |player| total += player[:points] }
+  return total
+end
+
+def winning_team
+  
+end
