@@ -231,4 +231,13 @@ def player_with_longest_name
   return longest_name
 end
 
-print player_with_longest_name
+def most_steals
+  players = get_all_players
+  max_steals = 0
+  players.each do |player|
+    if player[:steals] > max_steals
+      max_steals = player[:steals]
+    end
+  end
+  return max_steals
+end
