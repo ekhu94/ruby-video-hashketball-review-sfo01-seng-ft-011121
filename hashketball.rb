@@ -243,3 +243,5 @@ def player_with_most_steals
   end
   return players[i][:player_name]
 end
+
+puts player_with_most_steals
