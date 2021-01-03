@@ -219,3 +219,5 @@ end
 def winning_team
   
 end
+
+print total_points_scored("Charlotte Hornets")
