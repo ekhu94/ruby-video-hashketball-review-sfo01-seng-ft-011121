@@ -146,7 +146,9 @@ end
 
 def team_colors(name)
   hash = game_hash
-  
+  hash.each do |k, v|
+    return v[:team_colors] if v[:team_name] == name
+  end
 end
 
 print team_colors("Charlotte Hornets")
