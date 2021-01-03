@@ -146,9 +146,7 @@ end
 
 def team_colors
   hash = game_hash
-  hash.each do |team|
-    puts team[:team_name]
-  end
+  
 end
 
 print team_colors
