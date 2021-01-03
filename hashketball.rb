@@ -129,7 +129,6 @@ end
 
 def get_players(team)
   hash = game_hash
-  if team == nil 
     hash[:home][:players].concat(hash[:away][:players])
   end
   hash[team.to_sym][:players]
