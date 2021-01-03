@@ -144,11 +144,11 @@ def shoe_size(name)
   players.each { |player| return player[:shoe] if player[:player_name] == name }
 end
 
-def team_colors
+def team_colors(name)
   hash = game_hash
   hash.each do |sub_hash|
-    sub_hash.each { |team| return team if team == :home }
+    sub_hash.each { |team| return team if team[:team_name] == name }
   end
 end
 
-print team_colors
+print team_colors("Charlotte Hornets")
