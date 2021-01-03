@@ -235,10 +235,11 @@ def player_with_most_steals
   players = get_all_players
   max_steals = 0
   max_idx = 0
-  players.each do |player|
+  players.each_with_index do |player, i|
     if player[:steals] > max_steals
       max_steals = player[:steals]
+      max_idx = i
     end
   end
-  return max_steals
+  return players[i][:player_name]
 end
