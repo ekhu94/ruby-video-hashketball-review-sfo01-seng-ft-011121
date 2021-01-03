@@ -208,3 +208,5 @@ def most_points_scored
   end
   return players[max_idx][:player_name]
 end
+
+print most_points_scored
