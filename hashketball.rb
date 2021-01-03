@@ -167,3 +167,6 @@ def team_names
   arr
 end
 
+def player_numbers(team_name)
+  team = get_players(team_name)
+end
