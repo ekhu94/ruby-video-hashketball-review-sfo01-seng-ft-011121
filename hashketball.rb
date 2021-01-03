@@ -135,3 +135,5 @@ end
 def num_points_scored(name)
   
 end
+
+print get_players
