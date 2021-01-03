@@ -198,4 +198,13 @@ end
 
 def most_points_scored
   players = get_all_players
+  max = 0
+  max_idx = 0
+  players.each_with_index do |player, i|
+    if player[:points] > max
+      max = player[:points]
+      max_idx = i
+    end
+  end
+  return players[max_idx][:player_name]
 end
