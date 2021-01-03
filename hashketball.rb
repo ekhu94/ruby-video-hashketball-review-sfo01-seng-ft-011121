@@ -178,7 +178,7 @@ def player_stats(name)
   players = get_all_players
   players.each do |player|
     if player[:player_name] == name
-      player
+      return player
     end
   end
 end
