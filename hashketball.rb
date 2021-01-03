@@ -241,7 +241,7 @@ def player_with_most_steals
       max_idx = i
     end
   end
-  return players[i][:player_name]
+  return players[max_idx][:player_name]
 end
 
 puts player_with_most_steals
