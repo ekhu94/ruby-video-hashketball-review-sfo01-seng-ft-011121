@@ -168,5 +168,8 @@ def team_names
 end
 
 def player_numbers(team_name)
+  numbers = []
   players = get_players(team_name)
+  players.each { |player| numbers << player[:number] }
+  numbers
 end
