@@ -127,6 +127,11 @@ def game_hash
   }
 end
 
+def get_players(team)
+  hash = game_hash
+  
+end
+
 def get_all_players
   hash = game_hash
   hash[:home][:players].concat(hash[:away][:players])
