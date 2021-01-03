@@ -187,13 +187,15 @@ def big_shoe_rebounds
   players = get_all_players
   max_size = 0
   max_idx = 0
-  
   players.each_with_index do |player, i|
     if player[:shoe] > max_size
       max_size = player[:shoe]
       max_idx = i
     end
   end
-  
   return players[max_idx][:rebounds]
+end
+
+def most_points_scored
+  players = get_all_players
 end
