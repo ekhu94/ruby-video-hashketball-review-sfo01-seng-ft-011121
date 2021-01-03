@@ -147,7 +147,7 @@ end
 def team_colors
   hash = game_hash
   hash.each do |sub_hash|
-    return sub_hash[:team_name] if sub_hash == :home
+    sub_hash.each { |team| return team if team == :home }
   end
 end
 
