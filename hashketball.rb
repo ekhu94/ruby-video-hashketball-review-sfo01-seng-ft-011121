@@ -150,5 +150,3 @@ def team_colors(team_name)
     return team[:colors] if team[:team_name] == team_name
   end
 end
-
-print team_colors("Charlotte Hornets")
