@@ -131,7 +131,7 @@ def get_players(team_name)
   hash = game_hash
   hash.each do |region, team|
     if team[:team_name] == team_name
-      team[:players]
+      "found"
     end
   end
 end
