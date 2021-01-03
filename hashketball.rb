@@ -197,5 +197,3 @@ def big_shoe_rebounds
   
   return players[max_idx][:rebounds]
 end
-
-print big_shoe_rebounds
