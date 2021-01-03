@@ -132,7 +132,7 @@ def get_players(team)
   if team == nil 
     hash[:home][:players].concat(hash[:away][:players])
   end
-  hash[team.to_s][:players]
+  hash[team.to_sym][:players]
 end
 
 def num_points_scored(name)
