@@ -147,11 +147,8 @@ end
 def team_colors(name)
   hash = game_hash
   hash.each do |team|
-    if team[:team_name] == name
-      true;
-    end
+    print team;
   end
-  false;
 end
 
 print team_colors("Charlotte Hornets")
