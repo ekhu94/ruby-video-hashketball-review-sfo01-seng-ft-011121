@@ -127,15 +127,13 @@ def game_hash
   }
 end
 
-def get_players(team)
+def get_all_players
   hash = game_hash
-    hash[:home][:players].concat(hash[:away][:players])
-  end
-  hash[team.to_sym][:players]
+  hash[:home][:players].concat(hash[:away][:players])
 end
 
 def num_points_scored(name)
-  players = get_players
+  players = get_all_players
   players.each do |player|
     return player[:points] if player[:player_name] == name
   end
