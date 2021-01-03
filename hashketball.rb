@@ -147,7 +147,9 @@ end
 def team_colors(name)
   hash = game_hash
   hash.each do |team|
-    print team;
+    if team == :home
+      team
+    end
   end
 end
 
