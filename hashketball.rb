@@ -155,7 +155,7 @@ def team_names
   arr = []
   hash = game_hash
   hash.each { |region, team| arr << team[:team_name] }
-  hash
+  arr
 end
 
 print team_names
