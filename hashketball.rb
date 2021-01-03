@@ -129,7 +129,7 @@ end
 
 def get_players
   hash = game_hash
-  
+  hash[]
 end
 
 def num_points_scored(name)
