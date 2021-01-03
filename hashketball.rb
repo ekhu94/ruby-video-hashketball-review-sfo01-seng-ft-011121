@@ -220,4 +220,15 @@ def winning_team
   total_points_scored("Brooklyn Nets") > total_points_scored("Charlotte Hornets") ? "Brooklyn Nets" : "Charlotte Hornets"
 end
 
-print total_points_scored("Brooklyn Nets")
+def player_with_longest_name
+  players = get_all_players
+  longest_name = ""
+  players.each do |player|
+    if player[:player_name].length > longest_name
+      longest_name = player[:player_name]
+    end
+  end
+  return longest_name
+end
+
+print player_with_longest_name
