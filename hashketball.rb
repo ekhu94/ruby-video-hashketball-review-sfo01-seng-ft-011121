@@ -167,4 +167,3 @@ def team_names
   arr
 end
 
-print get_players("Brooklyn Nets")
