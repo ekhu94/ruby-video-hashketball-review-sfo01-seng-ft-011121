@@ -146,10 +146,8 @@ end
 
 def team_colors(name)
   hash = game_hash
-  hash.each do |team|
-    if team == :home
-      team[:home]
-    end
+  hash.each do |k, v|
+    
   end
 end
 
