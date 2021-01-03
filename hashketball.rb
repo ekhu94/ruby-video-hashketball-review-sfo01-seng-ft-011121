@@ -183,4 +183,17 @@ def player_stats(name)
   end
 end
 
-print player_stats("Alan Anderson")
+def big_shoe_rebounds
+  players = get_all_players
+  max_size = 0
+  max_idx = 0
+  
+  players.each_with_index do |player, i|
+    if player[i][:shoe] > max_size
+      max_size = player[i][:shoe]
+      max_idx = i
+    end
+  end
+  
+  return players[max_idx][:rebounds]
+end
