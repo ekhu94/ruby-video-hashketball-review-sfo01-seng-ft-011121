@@ -150,3 +150,10 @@ def team_colors(team_name)
     return team[:colors] if team[:team_name] == team_name
   end
 end
+
+def team_names
+  arr = []
+  hash = game_hash
+  hash.each { |region, team| arr << team[:team_name] }
+  hash
+end
