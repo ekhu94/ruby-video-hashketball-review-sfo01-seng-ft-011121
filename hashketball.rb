@@ -133,7 +133,10 @@ def get_players
 end
 
 def num_points_scored(name)
-  
+  players = get_players
+  players.each do |player|
+    return player[:points] if player[:player_name] == name
+  end
 end
 
 print get_players
