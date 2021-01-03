@@ -244,4 +244,6 @@ def player_with_most_steals
   return players[max_idx][:player_name]
 end
 
-puts player_with_most_steals
+def long_name_steals_a_ton?
+  return player_with_longest_name == player_with_most_steals
+end
